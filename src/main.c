@@ -136,9 +136,9 @@ int main(void) {
         if (!pio_get(BUT1_PIO, PIO_INPUT, BUT1_PIO_IDX_MASK)) {
             for (int i = 0; i < 10; i++) {
                 pio_set(LED1_PIO, LED1_PIO_IDX_MASK);   // Coloca 1 no pino LED
-                delay_ms(250);                          // Delay por software de 250 ms
+                delay_ms(100);                          // Delay por software de 250 ms
                 pio_clear(LED1_PIO, LED1_PIO_IDX_MASK); // Coloca 0 no pino do LED
-                delay_ms(250);                          // Delay por software de 250 ms
+                delay_ms(100);                          // Delay por software de 250 ms
             }
         } else {
             pio_set(LED1_PIO, LED1_PIO_IDX_MASK);
@@ -148,9 +148,9 @@ int main(void) {
         if (!pio_get(BUT2_PIO, PIO_INPUT, BUT2_PIO_IDX_MASK)) {
             for (int i = 0; i < 10; i++) {
                 pio_set(LED2_PIO, LED2_PIO_IDX_MASK);   // Coloca 1 no pino LED2
-                delay_ms(500);                          // Delay por software de 500 ms
+                delay_ms(250);                          // Delay por software de 500 ms
                 pio_clear(LED2_PIO, LED2_PIO_IDX_MASK); // Coloca 0 no pino do LED2
-                delay_ms(500);                          // Delay por software de 500 ms
+                delay_ms(250);                          // Delay por software de 500 ms
             }
         } else {
             pio_set(LED2_PIO, LED2_PIO_IDX_MASK);
@@ -160,9 +160,9 @@ int main(void) {
         if (!pio_get(BUT3_PIO, PIO_INPUT, BUT3_PIO_IDX_MASK)) {
             for (int i = 0; i < 10; i++) {
                 pio_set(LED3_PIO, LED3_PIO_IDX_MASK);   // Coloca 1 no pino LED
-                delay_ms(200);                          // Delay por software de 200 ms
+                delay_ms(500);                          // Delay por software de 200 ms
                 pio_clear(LED3_PIO, LED3_PIO_IDX_MASK); // Coloca 0 no pino do LED
-                delay_ms(200);                          // Delay por software de 200 ms
+                delay_ms(500);                          // Delay por software de 200 ms
             }
         } else {
             pio_set(LED3_PIO, LED3_PIO_IDX_MASK);
